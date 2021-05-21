@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="labelNumero1">
+        <property name="text">
+         <string>Numero 1:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBoxNumero1">
+        <property name="minimum">
+         <double>-99999999999999997168788049560464200849936328366177157906432.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000000000000303786028427003666890752.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelNumero2">
+        <property name="text">
+         <string>Numero 2:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="doubleSpinBoxNumero2">
+        <property name="minimum">
+         <double>-10000000000000000139372116959414099130712064.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>999999999999999939709166371603178586112.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelOperacion">
+        <property name="text">
+         <string>Operación:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxOperacion">
+        <item>
+         <property name="text">
+          <string>Suma</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Restar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Multiplicación</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>División</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>S&amp;alir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="calcularButton">
+        <property name="text">
+         <string>&amp;Calcular</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>&amp;Editar</string>
+    </property>
+    <addaction name="actionPreferencias"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuEditar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalir">
+   <property name="text">
+    <string>S&amp;alir</string>
+   </property>
+  </action>
+  <action name="actionPreferencias">
+   <property name="text">
+    <string>&amp;Preferencias ...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
